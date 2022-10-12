@@ -47,8 +47,8 @@
 
 		if(security.checked) {
 			appendSource(['']);
-			appendSource(['deb', arch, 'http://security.debian.org/', rel + '/updates', comps]);
-			if(src.checked) appendSource(['deb-src', arch, 'http://security.debian.org/', rel + '/updates', comps]);
+			appendSource(['deb', arch, 'http://security.debian.org/debian-security', rel + '-security', comps]);
+			if(src.checked) appendSource(['deb-src', arch, 'http://security.debian.org/debian-security', rel + '-security', comps]);
 		}
 
 		list.value = sourceList.join("\n");
